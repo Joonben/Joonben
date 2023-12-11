@@ -1,54 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="Jona Ruben Manalu">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title> 71231048 - Personal Web Page</title>
 </head>
-<body class="body">
-    <header class="header" >
-       <h1>Welcome to my personal web page </h1> 
-    </header>
-    <section id="foto">
-        <img src="jona.JPG" alt="Jona Ruben Manalu" width="300">
-    </section>
-    <section id="tentang-saya">
-       <h1>
-        <p>Jona Ruben Manalu</p>
-        <p>Bandung,Jawa Barat</p>
-        <p>Indonesia</p>
-        <p>instagram: <a href="https://www.instagram.com/jonben__/" target="_blank">@jonben__</a></p>
-        <p>Instansi: <a href="https://www.ukdw.ac.id/" target="_blank">Universitas Kristen Duta Wacana</a></a></p>
-       </h1>
-    </section>
-    <section id="keterampilan">
-        <ol> Skillset pemograman
-            <li> Java</li>
-            <li> Phyton</li>
-            <li> C++</li>
-            <li> Javasript</li>
-        </ol>
-    </section>
-    
-    <button id="tombolGantiWarna">Ganti warna </button>
 
-    <footer>
-       <b>THANK YOU</b> 
-    </footer>
+<body>
+    <div class="container">
+        <img src="jona.jpg" alt="Jona Ruben Manalu">
+        <h1>Jona Ruben Manalu</h1>
+        <p>Instagram: <a href="https://www.instagram.com/jonben__/" target="_blank">@jonben__</a></p>
+        <p>Instansi: <a href="https://www.ukdw.ac.id/" target="_blank">Universitas Kristen Duta Wacana</a></p>
+        <p>Bandung, Jawa Barat, Indonesia</p>
+        <p>Skillset Pemrograman 
+            <li>c++</li>
+            <li>java</li>
+            <li>phyton</li>
+        <button onclick="changeBackgroundColor()">Ganti Warna Background</button>
+    </div>
 
-    <script>
-        const bodyElement = document.body;
-
-        function gantiWarnaRandom() {
-            const warnaList = ["#6a5acd","#ee82ee","#0000ff","#ffffff"]
-            const randomIndex = Math.floor(Math.random() * warnaList.length);
-            const warnaRandom = warnaList[randomIndex];
-            bodyElement.style.backgroundColor = warnaRandom;
-        }
-
-        const tombolGantiWarna = document.getElementById("tombolGantiWarna");
-        tombolGantiWarna.addEventListener("click", gantiWarnaRandom);
-    </script>
+    <script src="gass.js"></script>
 </body>
+
 </html>
